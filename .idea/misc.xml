@@ -4,11 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Samazon/app/src/main/res/drawable/border.xml" value="0.3828125" />
+        <entry key="..\:/Samazon/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Samazon/app/src/main/res/layout/activity_change_password.xml" value="0.20520833333333333" />
         <entry key="..\:/Samazon/app/src/main/res/layout/activity_forgot_password.xml" value="0.2957427536231884" />
+        <entry key="..\:/Samazon/app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
         <entry key="..\:/Samazon/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Samazon/app/src/main/res/layout/activity_profile.xml" value="0.2957427536231884" />
         <entry key="..\:/Samazon/app/src/main/res/layout/activity_register.xml" value="0.2957427536231884" />
+        <entry key="..\:/Samazon/app/src/main/res/layout/fragment_cart.xml" value="0.28306159420289856" />
+        <entry key="..\:/Samazon/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Samazon/app/src/main/res/layout/fragment_settings.xml" value="0.28306159420289856" />
+        <entry key="..\:/Samazon/app/src/main/res/layout/fragment_store.xml" value="0.28306159420289856" />
+        <entry key="..\:/Samazon/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

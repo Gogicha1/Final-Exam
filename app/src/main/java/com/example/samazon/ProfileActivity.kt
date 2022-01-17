@@ -1,47 +1,37 @@
 package com.example.samazon
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
-import com.google.firebase.auth.FirebaseAuth
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class ProfileActivity : AppCompatActivity() {
 
-    private lateinit var logOutButton: Button
-    private lateinit var emailShow: TextView
-    private lateinit var  userId: TextView
-    private lateinit var changePassword: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        logOutButton = findViewById(R.id.buttonLogOut)
-        emailShow = findViewById(R.id.emailShow)
-        userId = findViewById(R.id.userId)
-        changePassword = findViewById(R.id.changePassword)
+        val navView = findViewById<BottomNavigationView>(R.id.bottomNavView)
 
+        val controller = findNavController(R.id.nav_host_fragment)
 
+        val appBarConfig = AppBarConfiguration(setOf(
+            R.id.storeFragment,
+            R.id.cartFragment,
+            R.id.profileFragment,
+            R.id.settingsFragment
 
-        emailShow.text = "Email: ${FirebaseAuth.getInstance()?.currentUser?.email}"
-        userId.text = "User Id : ${FirebaseAuth.getInstance()?.currentUser?.uid}"
+        ))
 
-
-
-        logOutButton.setOnClickListener{
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(this, LoginActivity:: class.java))
-            finish()
-        }
-
-
-        changePassword.setOnClickListener{
-            startActivity(Intent(this, ChangePasswordActivity:: class.java))
-        }
-
+        setupActionBarWithNavController(controller, appBarConfig)
+        navView.setupWithNavController(controller)
 
 
 
