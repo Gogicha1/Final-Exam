@@ -25,4 +25,9 @@
         android:name="com.example.samazon.fragments.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.samazon.fragments.AddItemFragment"
+        android:label="AddItemFragment"
+        tools:layout="@layout/fragment_add_item"/>
 </navigation>
