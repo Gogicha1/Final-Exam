@@ -8,39 +8,11 @@
 
 
     <TextView
-        android:id="@+id/fullName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginRight="40dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/profilePic"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067" />
-
-    <TextView
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="@color/black"
         android:layout_marginLeft="150dp"
-        android:layout_marginRight="40dp"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/emailShow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fullName" />
-
-    <TextView
-        android:id="@+id/emailShow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="48dp"
         android:layout_marginRight="40dp"
         android:text=""
         android:textColor="@color/black"
@@ -48,7 +20,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toEndOf="@+id/profilePic"
-        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="40dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toEndOf="@+id/profilePic"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <ImageView
         android:id="@+id/profilePic"
@@ -57,6 +44,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/round"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
