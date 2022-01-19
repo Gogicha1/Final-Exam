@@ -31,7 +31,7 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         storeRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         storeRecyclerView.setHasFixedSize(true)
 
-        productArrayList = arrayListOf<ProductInfo>()
+        productArrayList = arrayListOf()
         getProductData()
     }
 

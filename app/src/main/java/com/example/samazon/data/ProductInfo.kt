@@ -5,3 +5,4 @@ data class ProductInfo(
     val price: String? = null,
     val description: String? = null
 )
+
