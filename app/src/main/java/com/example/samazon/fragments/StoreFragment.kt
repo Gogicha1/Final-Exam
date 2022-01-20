@@ -76,7 +76,7 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         builder.setNegativeButton("არა"){_,_->
 
         }
-        builder.setTitle("add product")
+        builder.setTitle("დაამატეთ პროდუქტი")
         builder.setMessage("გსურთ პროდუქტის დამატება?")
         builder.create().show()
 

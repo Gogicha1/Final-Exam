@@ -13,18 +13,18 @@
         android:id="@+id/list_layout"
         android:background="@color/black">
 
-    <ImageView
-        android:id="@+id/shoppingCart"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_baseline_shopping_bag_24" />
+        <ImageView
+            android:id="@+id/productsImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_shopping_bag_24" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/shoppingCart"
+            android:layout_toEndOf="@id/productsImage"
             android:fontFamily="sans-serif-smallcaps"
             android:text="სახელი"
             android:textColor="@color/white"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/name"
-            android:layout_toEndOf="@id/shoppingCart"
+            android:layout_toEndOf="@id/productsImage"
             android:fontFamily="sans-serif-smallcaps"
             android:textStyle="bold"
             android:textColor="@color/white"
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/price"
-            android:layout_toEndOf="@id/shoppingCart"
+            android:layout_toEndOf="@id/productsImage"
             android:fontFamily="sans-serif-smallcaps"
             android:text="აღწერა"
             android:textColor="@color/white"

@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class ChangePasswordActivity : AppCompatActivity() {
 
+
     private lateinit var editTextNewPassword1: EditText
     private lateinit var editTextNewPassword2: EditText
     private lateinit var textView4: TextView
