@@ -11,42 +11,50 @@
         android:id="@+id/userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
         android:text=""
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
-        app:layout_constraintStart_toEndOf="@+id/profilePic"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/select"
+        app:layout_constraintTop_toBottomOf="@+id/select" />
 
     <TextView
         android:id="@+id/emailShow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
         android:text=""
         android:textColor="@color/black"
-        android:layout_marginTop="35dp"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.393"
-        app:layout_constraintStart_toEndOf="@+id/profilePic"
+        app:layout_constraintStart_toEndOf="@+id/select"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:id="@+id/select"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="48dp"
-        android:src="@drawable/ic_launcher_foreground"
-        android:background="@drawable/round"
+        android:src="@drawable/ic_baseline_add_a_photo_24"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailShow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

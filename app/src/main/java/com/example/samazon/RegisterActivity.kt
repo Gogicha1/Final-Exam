@@ -35,6 +35,7 @@ class RegisterActivity : AppCompatActivity() {
         init()
         registerListeners()
 
+
     }
     private fun init() {
         editTextEmail = findViewById(R.id.editEmail)
@@ -67,7 +68,7 @@ class RegisterActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
-                            val userInfo = com.example.samazon.data.UserInfo(userName)
+                            val userInfo = com.example.samazon.data.UserInfo(userName, email)
                             db.child(auth.currentUser?.uid!!).setValue(userInfo)
                             startActivity(Intent(this, LoginActivity::class.java))
 

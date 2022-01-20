@@ -64,7 +64,7 @@ class ChangePasswordActivity : AppCompatActivity() {
         when {
 
             password1.length < 8 -> {
-                textView4.text = "Password Has To Be At Least 9 Characters Long"
+                textView4.text = "Password Has To Be At Least 8 Characters Long"
                 return false
             }
 
