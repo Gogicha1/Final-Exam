@@ -84,11 +84,11 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun userNameValidate(userName: String): Boolean{
          if (userName.isEmpty()){
-            textView4.text = "Enter Username!"
+            textView4.text = "შეიყვანეთ სახელი!"
             return false
         }
         else if (userName.length > 10 || userName.length < 2){
-            textView4.text = "Username Must Be Between 2-10 Characters"
+            textView4.text = "სახელი უნდა შეიცავდეს 2-10 ასომდე"
             return false
         }
         else {
@@ -103,7 +103,7 @@ class RegisterActivity : AppCompatActivity() {
             textView1.text = ""
             true
         } else {
-            textView1.text = "Please Enter an existing E-mail!"
+            textView1.text = "E-mail არასწორია"
             false
         }
     }
@@ -111,15 +111,10 @@ class RegisterActivity : AppCompatActivity() {
     private fun passwordValidate(password1: String, password2: String): Boolean {
 
         if (password1.length < 8) {
-            textView2.text = "Required At Least 8 Characters Long!"
+            textView2.text = "პაროლი უნდა შეიცავდეს მინიმუმ 8 სიმბოლოს!"
             return false
-        }
-        else if (!password1.matches(".*[!@#$%^&*+=/?].*".toRegex())) {
-            textView2.text = "Required at least 1 Symbol!"
-            return false
-        }
-        else if (password1 != password2) {
-            textView3.text = "Passwords must be identical!"
+        } else if (password1 != password2) {
+            textView3.text = "პაროლები ერთმანეთს არ ემთხვევა"
             return false
         }
         else return true

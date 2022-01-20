@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F72DB5A5"
+    android:background="#3A3939"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -16,74 +16,73 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="128dp"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:text="Welcome!" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
 
         <EditText
             android:id="@+id/editEmail"
             android:layout_width="match_parent"
-            android:layout_marginBottom="50dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/border"
             android:ems="10"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
             android:padding="11dp"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/white"
-            android:textColor="@color/black"
             android:layout_marginBottom="70dp"
             android:background="@drawable/border"
-            android:padding="11dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textAlignment="center" />
+            android:padding="11dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_marginEnd="60dp"
-            android:layout_marginStart="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
             android:text="Login" />
 
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_marginEnd="60dp"
-            android:layout_marginStart="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
             android:text="Register" />
 
         <Button
             android:id="@+id/buttonForgot"
-            android:layout_marginEnd="60dp"
-            android:layout_marginStart="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
             android:text="Forgot Password?" />
 
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/samazonlogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

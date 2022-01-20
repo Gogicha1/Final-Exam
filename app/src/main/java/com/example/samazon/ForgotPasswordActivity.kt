@@ -52,7 +52,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
             textViewReset.text = ""
             true
         } else {
-            textViewReset.text = "Please Enter A Valid E-mail"
+            textViewReset.text = "E-mail არასწორია!"
             false
         }
     }

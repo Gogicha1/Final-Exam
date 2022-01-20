@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F72DB5A5"
+    android:background="#3A3939"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -47,7 +47,7 @@
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
 
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FF0000"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="" />
 
         <EditText
@@ -65,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/white"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:background="@drawable/border"
             android:padding="10dp"
             android:ems="10"
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FF0000"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="" />
 
         <EditText
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/white"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:background="@drawable/border"
             android:padding="10dp"
             android:ems="10"
@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FF0000"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="" />
 
         <EditText
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/white"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:background="@drawable/border"
             android:padding="10dp"
             android:ems="10"
@@ -120,7 +120,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FF0000"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:text="" />
 
         <Button

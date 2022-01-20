@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
 
 
             if (email.isEmpty() || password.isEmpty()){
-                Toast.makeText(this, "Please input existing E-mail and Password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "შეავსეთ ცარიელი ველი!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(Intent(this, ProfileActivity::class.java))
                     finish()
                 } else {
-                    Toast.makeText(this, "Inputted password or E-mail address do not exist", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "E-mail ან პაროლი არასწორია!", Toast.LENGTH_SHORT).show()
                 }
             }
 
