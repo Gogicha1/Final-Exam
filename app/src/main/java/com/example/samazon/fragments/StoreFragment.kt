@@ -6,6 +6,8 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,12 +29,14 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
 
+
         storeRecyclerView = view.findViewById(R.id.storeRecyclerView)
         storeRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         storeRecyclerView.setHasFixedSize(true)
 
         productArrayList = arrayListOf()
         getProductData()
+
     }
 
     private fun getProductData() {
@@ -79,7 +83,6 @@ class StoreFragment : Fragment(R.layout.fragment_store) {
         builder.setTitle("დაამატეთ პროდუქტი")
         builder.setMessage("გსურთ პროდუქტის დამატება?")
         builder.create().show()
-
 
     }
 

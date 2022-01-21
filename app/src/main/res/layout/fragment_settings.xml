@@ -11,27 +11,28 @@
         android:id="@+id/changePassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="96dp"
+        android:background="@drawable/border"
         android:text="Change Password"
         android:textColor="@color/white"
-        android:layout_marginHorizontal="96dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/border"
 
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
 
     <Button
         android:id="@+id/buttonLogOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="96dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/border"
         android:text="Log Out"
         android:textColor="@color/white"
-        android:layout_marginHorizontal="96dp"
-        android:background="@drawable/border"
         android:textSize="17sp"
-        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changePassword" />
